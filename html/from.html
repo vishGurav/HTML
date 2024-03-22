@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="table.html" >
+        <h4><label >Name:</label></h4>
+        <input type="text" placeholder="name" required><br><br>
+        <h4><label > Last Name:</label></h4>
+        <input type="text" placeholder="Lastname" required><br><br>
+        <h4><label > Date of Birth:</label></h4>
+        <input type="date" ><br><br>
+       
+        <h4><label for="">mobile  No :</label></h4>
+        <input type="number" placeholder="mobileno" maxlength="10" minlength="10" required><br><br>
+        <h4><label for="">Email :</label></h4>
+        <input type="email" placeholder="email" required><br><br>
+        <h4><label for="">Passworld :</label></h4>
+        <input type="password" placeholder="Passworld" required><br><br>
+        <h4><label for="">Gender :</label><br><br></h4>
+        <input type="radio" name="Gender"><label for="">Male</label>
+        <input type="radio" name="Gender"><label for="">female</label>
+        <input type="radio" name="Gender"><label for="">other</label><br>
+        <h4><label for="">Address :</label><br></h4>
+        <textarea cols="100" rows="5"></textarea><br><br><hr>
+        <h3><label>skill</label><br></h3>
+        <input type="checkbox" ><label> C lang</label><br>
+        <input type="checkbox" ><label> C++ lang</label><br>
+        <input type="checkbox" ><label> java lang</label><br>
+        <input type="checkbox" ><label> SQL</label><br>
+        <input type="checkbox" ><label> javascript</label><hr>
+       
+        <h3><label > Select Lang..</label><br> </h3>
+        <select required multiple>
+            <option >english</option>
+            <option >Hindi</option>
+            <option >Marathi</option>
+            <option >Kanada</option>
+         </select><br><br>
+
+         <hr>
+        <h3> <label> select clg name</label><br>
+         
+         <input type="text" placeholder="College names" list="clg">
+         <datalist id="clg">
+            <option value="KIT college of eng">KIT college of eng</option>
+                <option value="SIT college of eng">SIT college of eng</option>
+                <option value="RIT college of eng">RIT college of eng</option>
+                <option value="DKTE college of eng">DKTE college of eng</option>
+                <option value="WLC college of eng">WLC college of eng</option>
+         </datalist>
+         <br><br>
+         <h3><label >degree complited year :</label><br></h3>
+         <input type="date" min="2020-06-01" max="2023-06-20" required ><br><br>
+         <h3><label >Marksheet</label><br></h3>
+         <input type="file" value="choose file ">
+         <br><br>
+
+         <input type="submit"   value="SAVE">
+         <input type="reset" value="CANCLE">
+
+
+
+    </form>
+</body>
+</html>
